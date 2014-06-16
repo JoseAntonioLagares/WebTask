@@ -11,16 +11,16 @@ Items
 Inside the source code you might see the following items:
 
       -server.js
-            Inside it, the complete configuration of the whole app is stored. 
+            #Inside it, the complete configuration of the whole app is stored. 
       -package.json
-            File needed to deploy NodeJS.
+            #File needed to deploy NodeJS.
       -src
         --index.html
-            View part of the aplication. Bootstrap is loaded using a CDN repository
+            #View part of the aplication. Bootstrap is loaded using a CDN repository
         --main.js
-            Controller of the app. The code of the operation is located in it.
+            #Controller of the app. The code of the operation is located in it.
       -node_modules
-            Necessary modules to deploy the app.
+            #Necessary modules to deploy the app.
 
 Authors 
 =======
