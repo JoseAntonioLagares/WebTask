@@ -1,7 +1,9 @@
 WebTask
 =======
 
-A short example of the combination of MongoDB+AngularJS+NodeJS+JSON+Bootstrap+REST. I used the latest version of these software. In this app a representation of a simply employee management is showed. 'Adding', 'List' and 'Delete' more employee are the basic operation in this app. 
+A short example of the combination of MongoDB+AngularJS+NodeJS+JSON+Bootstrap+REST. I used the latest version of these software. In this app a representation of a simply employee management is showed. 'Adding', 'List' and 'Delete' more employee are the basic operations in this app. 
+
+For further information about the configuration and the execution of this app, please follow the next instruction and the comments inside the source code.
 
 Items
 =====
@@ -24,3 +26,5 @@ Authors
 =======
 
 José Antonio Lagares Rodriguez - 2014. Feel free to fork it ;)
+
+If you have any further questions please do not hesitate to contact me.
