@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" ng-app="angularEmpleado">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gest. Empleados</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+</head>
+<body ng-controller="mainController">
+	<div class="container">
+		<!--Cabecera-->
+		<div class="blog-header">
+			<h1 class="blog-title">Programa Administrar Empleados</h1>
+			<p class="lead blog-description">App de prueba usando MongoDB + AngularJS + Bootstrap + API REST.</p><hr><br><br>
+		</div>
+	
+
+		<!--Formulario para insertar nuevos Empleados-->
+		<div id="todo-form" class="row">
+			<div class="col-md-8 text-center">
+				<form>
+					<div class="form-group jumbotron">
+						<input type="text" class="form-control input-lg text-center" 
+								placeholder="Inserta un nuevo Empleado"
+								ng-model="formData.text" required="required">
+					</div>
+					<button class="btn btn-warning btn-lg" ng-click="createEmpleado()">A&ntilde;adir</button>
+				</form>
+			</div>
+		
+		<!--Lista de Empleados-->
+			<div class="col-md-4">
+				<div class="sidebar-module sidebar-module-inset">
+					<h2>Informaci&oacute;n</h2>
+					<p>Esta app es una simple gesti&oacute;n de empleados simulando un entorno real. Para elmininar un empleado pulsa sobre el check box correspondiente. La aplicacicaci&oacute;n ha sido realizada por Jose Antonio Lagares Rodriguez. 2014</p>
+				</div>
+				<div class="sidebar-module">
+				<h2>Listado</h2>
+					<div class="checkbox" ng-repeat="empleado in empleados">
+						<label>
+							<input type="checkbox" ng-click="deleteEmpleado(empleado._id)"> 
+							{{ empleado.text }}
+						</label>
+					</div>
+					<h2><small>Total:{{ empleados.length }}</small></h2>
+				</div>
+			</div>
+		</div>
+	
+	<div class="footer">
+		<hr>
+			<p>Jose Antonio Lagares Rodriguez - 2014</p>
+	</div>
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>

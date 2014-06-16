@@ -1,0 +1,11 @@
+{
+	"name": "angular-empleado",
+	"version": "0.0.1",
+	"description": "App de ejemplo",
+	"main": "server.js",
+	"author": "Jose Antonio Lagares Rodriguez <jalagrod@gmail.com>",
+	"dependencies": {
+		"express": "~3.4.4",
+		"mongoose": "~3.6.2"
+	}
+}
